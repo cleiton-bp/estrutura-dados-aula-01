@@ -1,3 +1,8 @@
+package exercicio1;
+
+import exercicio2.Livraria;
+import exercicio2.Livro;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -49,5 +54,24 @@ public class Main {
         estruturaDados.inserirAluno(aluno4);
 
         estruturaDados.listarAlunos();
+
+
+        System.out.println("--------------------------------------------------------");
+
+        Livro livro1 = new Livro("teste1", "nome1", 100);
+        Livro livro2 = new Livro("teste2", "nome2", 200);
+        Livro livro3 = new Livro("teste3" , "nome3", 300);
+
+        Livraria livraria1 = new Livraria();
+
+        livraria1.inserirLivro(livro1);
+        livraria1.inserirLivro(livro2);
+        livraria1.inserirLivro(livro3);
+
+        livraria1.listarLivros();
+
+        livro1.isDisponivel();
+        livro2.isDisponivel();
+        livro3.isDisponivel();
     }
 }

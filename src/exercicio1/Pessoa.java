@@ -1,3 +1,5 @@
+package exercicio1;
+
 public class Pessoa {
     private String Nome;
     private String Email;

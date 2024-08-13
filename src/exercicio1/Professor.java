@@ -1,13 +1,15 @@
-public class Aluno extends Pessoa {
+package exercicio1;
 
-    public Aluno(String nome, String email) {
+public class Professor extends Pessoa {
+
+    public Professor(String nome, String email) {
         this.setNome(nome);
         this.setEmail(email);
     }
+
 
     @Override
     public void logar() {
         System.out.println("Professor Logado");
     }
-
 }
